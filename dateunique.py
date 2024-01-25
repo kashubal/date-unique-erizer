@@ -22,7 +22,7 @@ import os
 from datetime import datetime
 from dateutil import parser
 
-
+print()
 print("********************")
 print("********************")
 print("DATE UNIQUE-ERIZER")
@@ -37,7 +37,8 @@ print("This application will read a specified input file, expecting a "
 # prompt user for input file
 print()
 input_file_location = str(input("Please enter the full path to your input "
-    "file or, if in the current directory, the file name: ")) or "dates.txt"
+    "file or, if in the current directory, the file name.  If no file is "
+    "provided, ./SAMPLE_INPUT_FILE.txt will be used: ")) or "SAMPLE_INPUT_FILE.txt"
 print("Input file name/location you provided:" + input_file_location)
 
 # prompt user for output file
